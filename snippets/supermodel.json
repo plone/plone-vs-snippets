@@ -1,12 +1,12 @@
 {
     "Supermodel Choice": {
-        "prefix": "smc",
+        "prefix": "plonesmc",
         "body": [
-            "<field name=\"${0:name}\" type=\"${1:type:zope.schema.Choice}\">",
-            "  <description>${2:description}</description>",
-            "  <required>${3:required:|False,True|</required>",
-            "  <title>${4:title}</title>",
-            "  <vocabulary>${5:vocabulary}</vocabulary>",
+            "<field name=\"${1:name}\" type=\"${2:zope.schema.Choice}\">",
+            "  <description>${3:description}</description>",
+            "  <required>${4|False,True|}</required>",
+            "  <title>${5:title}</title>",
+            "  <vocabulary>${6:vocabulary}</vocabulary>",
             "</field>"
         ]
     }

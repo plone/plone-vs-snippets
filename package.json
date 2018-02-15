@@ -30,7 +30,7 @@
     "snippets": [
       {
         "language": "xml",
-        "path": "./snippets/suppermodel.json"
+        "path": "./snippets/supermodel.json"
       }
     ]
   }
