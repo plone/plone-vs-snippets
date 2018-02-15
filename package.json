@@ -13,7 +13,7 @@
     "vscode": "^1.12.0"
   },
   "categories": [
-      "Snippets"
+    "Snippets"
   ],
   "keywords": [
     "plone",
@@ -28,10 +28,10 @@
   "homepage": "https://github.com/plone/plone-vs-snippets#readme",
   "contributes": {
     "snippets": [
-        {
-            "language": "xml",
-            "path": "./snippets/suppermodel.json"
-        }
+      {
+        "language": "xml",
+        "path": "./snippets/suppermodel.json"
+      }
     ]
-}
+  }
 }
