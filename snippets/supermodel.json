@@ -8,7 +8,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:default}</default>",
             "</field>"
         ]
@@ -22,7 +22,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:default}</default>",
             "</field>"
         ]
@@ -36,7 +36,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:default}</default>",
             "</field>"
         ]
@@ -50,7 +50,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:default}</default>",
             "</field>"
         ]
@@ -64,7 +64,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:default}</default>",
             "</field>"
         ]
@@ -78,7 +78,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:default}</default>",
             "</field>"
         ]
@@ -92,7 +92,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:default}</default>",
             "</field>"
         ]
@@ -106,7 +106,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:100}</max_length>",
             "   <min_length>${7:1}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:http://default}</default>",
             "</field>"
         ]
@@ -120,7 +120,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:default}</default>",
             "</field>"
         ]
@@ -136,7 +136,7 @@
             "   <min_length>${7:2}</min_length>",
             "   <max_dots>${8:4}</max_dots>",
             "   <min_dots>${9:2}</min_dots>",
-            "   <readonly>${10:|True,False|}</readonly>",
+            "   <readonly>${10|False,True|}</readonly>",
             "   <default>${11:default}</default>",
             "</field>"
         ]
@@ -150,7 +150,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:default}</default>",
             "</field>"
         ]
@@ -162,8 +162,8 @@
             "   <description>${3:description}</description>",
             "   <required>${4|False,True|}</required>",
             "   <title>${5:title}</title>",
-            "   <readonly>${6:|True,False|}</readonly>",
-            "   <default>${7:default}</default>",
+            "   <readonly>${6|False,True|}</readonly>",
+            "   <default>${7|False,True|}</default>",
             "</field>"
         ]
     },
@@ -176,7 +176,7 @@
             "   <title>${5:title}</title>",
             "   <max>${6:100}</max>",
             "   <min>${7:1}</min>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:default}</default>",
             "</field>"
         ]
@@ -190,7 +190,7 @@
             "   <title>${5:title}</title>",
             "   <max>${6:99.9}</max>",
             "   <min>${7:0.01}</min>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:default}</default>",
             "</field>"
         ]
@@ -204,7 +204,7 @@
             "   <title>${5:title}</title>",
             "   <max>${6:99.9}</max>",
             "   <min>${7:0.01}</min>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:default}</default>",
             "</field>"
         ]
@@ -218,7 +218,7 @@
             "   <title>${5:title}</title>",
             "   <max>${6:2099-12-31}</max>",
             "   <min>${7:2000-01-01}</min>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:2018-01-31}</default>",
             "</field>"
         ]
@@ -232,7 +232,7 @@
             "   <title>${5:title}</title>",
             "   <max>${6:2099-12-31 01:02:02}</max>",
             "   <min>${7:2000-01-01 00:00:01}</min>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>${9:2018-01-31 00:00:00}</default>",
             "</field>"
         ]
@@ -244,7 +244,7 @@
             "   <description>${3:description}</description>",
             "   <required>${4|False,True|}</required>",
             "   <title>${5:title}</title>",
-            "   <readonly>${6:|True,False|}</readonly>",
+            "   <readonly>${6|False,True|}</readonly>",
             "   <default>${7:plone.supermodel.tests.IDummy}</default>",
             "</field>"
         ]
@@ -258,7 +258,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>",
             "       <element>${9:element1}</element>",
             "       <element>${10:element2}</element>",
@@ -278,7 +278,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>",
             "       <element>${9:1}</element>",
             "       <element>${10:2}</element>",
@@ -298,7 +298,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>",
             "       <element>${9:1}</element>",
             "       <element>${10:2}</element>",
@@ -318,7 +318,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>",
             "       <element>${9:1}</element>",
             "       <element>${10:2}</element>",
@@ -338,7 +338,7 @@
             "   <title>${5:title}</title>",
             "   <max_length>${6:10}</max_length>",
             "   <min_length>${7:2}</min_length>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "   <default>",
             "       <element key=${9:\"a\"}>${10:1}</element>",
             "       <element key=${11:\"a\"}>${12:1}</element>",
@@ -356,7 +356,7 @@
             "   <description>${3:description}</description>",
             "   <required>${4|False,True|}</required>",
             "   <title>${5:title}</title>",
-            "   <readonly>${6:|True,False|}</readonly>",
+            "   <readonly>${6|False,True|}</readonly>",
             "   <schema>${7:plone.supermodel.tests.IDummy}</schema>",
             "</field>"
         ]
@@ -370,7 +370,7 @@
             "   <title>${5:title}</title>",
             "   <vocabulary>${6:vocabulary}</vocabulary>",
             "   <default>${7:default}</default>",
-            "   <readonly>${8:|True,False|}</readonly>",
+            "   <readonly>${8|False,True|}</readonly>",
             "</field>"
         ]
     },
@@ -387,7 +387,7 @@
             "      <element>${8:choice2}</element>",
             "    </values>",
             "  </value_type>",
-            "   <readonly>${9:|True,False|}</readonly>",
+            "   <readonly>${9|False,True|}</readonly>",
             "</field>"
         ]
     }    
