@@ -7,6 +7,35 @@
             "</form:widget>"
         ]
     },
+    "RelationChoice / Single (Supermodel)": {
+        "prefix": "plonerelationchoice",
+        "body":[
+            "<field name=\"links\" type=\"plone.app.relationfield.RelationChoice\">",
+            "  <title>Related Items</title>",
+            "  <source>plone.formwidget.contenttree.obj_path_src_binder</source>",
+            "</field>"
+        ]
+    },
+    "RelationList / Multible (Supermodel)": {
+        "prefix": "plonerelationlist",
+        "body":[
+            "<field name=\"links\" type=\"plone.app.relationfield.RelationList\">",
+            "  <title>Related Items</title>",
+            "  <value_type type=\"plone.app.relationfield.Relation\">",
+            "    <title>Related</title>",
+            "    <source>plone.formwidget.contenttree.obj_path_src_binder</source>",
+            "  </value_type>",
+            "</field>"
+        ]
+    },
+
+
+
+
+
+
+
+
     "Bytes Field (Supermodel)": {
         "prefix": "plonebytesfield",
         "body":[
@@ -434,5 +463,5 @@
             "</field>"
         ]
     }
-       
+
 }
