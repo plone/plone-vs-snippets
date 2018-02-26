@@ -364,7 +364,7 @@
         ]
     },
     "Choice Field (Supermodel)": {
-        "prefix": "plonefieldchoicefield",
+        "prefix": "plonechoicefield",
         "body": [
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Choice}\">",
             "  <title>${3}</title>",
@@ -403,5 +403,28 @@
             "  <readonly>False</readonly>",
             "</field>"
         ]
-    }    
+    },
+    "File Field (Supermodel)": {
+        "prefix": "plonefilefiled",
+        "body":[
+            "<field name=\"${1:name}\" type=\"${2:plone.namedfile.field.NamedBlobFile}\">",
+            "  <title>${3:title}</title>",
+            "  <description>${4:description}</description>",
+            "  <required>${5|False,True|}</required>",
+            "  <readonly>False</readonly>",
+            "</field>"
+        ]
+    },
+    "Image Field (Supermodel)": {
+        "prefix": "ploneimagefiled",
+        "body":[
+            "<field name=\"${1:name}\" type=\"${2:plone.namedfile.field.NamedBlobImage}\">",
+            "  <title>${3:title}</title>",
+            "  <description>${4:description}</description>",
+            "  <required>${5|False,True|}</required>",
+            "  <readonly>False</readonly>",
+            "</field>"
+        ]
+    }
+       
 }
