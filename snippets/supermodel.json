@@ -1,4 +1,12 @@
 {
+    "Set Widget (Supermodel)": {
+        "prefix": "plonewidget",
+        "body":[
+            "<form:widget type=\"${1:z3c.form.browser.radio.RadioWidget}\">",
+            "  <klass>${2:annoying}</klass>",
+            "</form:widget>"
+        ]
+    },
     "Bytes Field (Supermodel)": {
         "prefix": "plonebytesfield",
         "body":[
@@ -389,7 +397,7 @@
             "  <readonly>False</readonly>",
             "</field>"
         ]
-    },    
+    },
     "DataGrid Field (Supermodel)": {
         "prefix": "plonedatagridfield",
         "body": [
@@ -403,5 +411,5 @@
             "  <readonly>False</readonly>",
             "</field>"
         ]
-    }    
+    }
 }
