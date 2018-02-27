@@ -431,12 +431,14 @@
     "DataGrid Field": {
         "prefix": "plonedatagridfield",
         "body": [
+            "<!-- make sure collective.z3cform.datagridfield is installed! -->",
             "<field name=\"${1:name}\" type=\"${2:zope.schema.List}\">",
             "  <title>${3:title}</title>",
             "  <description>${4:description}</description>",
             "  <value_type type=\"${5:collective.z3cform.datagridfield.DictRow}\">",
             "    <schema>${6:your.package.content.your_ct.ITableRowSchema}</schema>",
             "  </value_type>",
+            "  <form:widget type=\"collective.z3cform.datagridfield.DataGridFieldFactory\"/>",
             "  <required>${8|False,True|}</required>",
             "  <readonly>False</readonly>",
             "</field>"
