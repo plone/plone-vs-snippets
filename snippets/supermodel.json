@@ -1,34 +1,44 @@
 {
-    "Set Widget (Supermodel)": {
+    "Set Widget": {
         "prefix": "plonewidget",
         "body":[
-            "<form:widget type=\"${1:z3c.form.browser.radio.RadioWidget}\">",
-            "  <klass>${2:annoying}</klass>",
+            "<form:widget type=\"${1|z3c.form.browser.checkbox.CheckBoxFieldWidget,z3c.form.browser.checkbox.SingleCheckBoxFieldWidget,plone.z3cform.textlines.TextLinesFieldWidget,plone.app.z3cform.wysiwyg.WysiwygFieldWidget,plone.app.z3cform.widget.SelectFieldWidget,plone.app.z3cform.widget.AjaxSelectFieldWidget,plone.app.z3cform.widget.RelatedItemsFieldWidget,plone.app.z3cform.widget.QueryStringFieldWidget,plone.app.z3cform.widget.LinkFieldWidget|}\">",
+            "  <klass>${2:my_css_class}</klass>",
             "</form:widget>"
         ]
     },
-    "RelationChoice / Single (Supermodel)": {
+    "RelationChoice (single)": {
         "prefix": "plonerelationchoice",
         "body":[
-            "<field name=\"${1:name}\" type=\"${2:plone.app.relationfield.RelationChoice}\">",
-            "  <title>${3:Related Items}</title>",
-            "  <source>${4:plone.formwidget.contenttree.obj_path_src_binder}</source>",
+            "<field name=\"${1}\" type=\"${2:z3c.relationfield.schema.RelationChoice}\">",
+            "  <title>${3}</title>",
+            "  <portal_type>",
+            "    <element>${4|Document,News Item,Event,File,Image,Link,Collection,Folder|}</element>",
+            "    <element>${5|Document,News Item,Event,File,Image,Link,Collection,Folder|}</element>",
+            "  </portal_type>",
+            "  <required>${6|False,True|}</required>",
+            "  <readonly>False</readonly>",
             "</field>"
         ]
     },
-    "RelationList / Multible (Supermodel)": {
+    "RelationList (multi)": {
         "prefix": "plonerelationlist",
         "body":[
-            "<field name=\"${1:name}\" type=\"${2:plone.app.relationfield.RelationList}\">",
+            "<field name=\"${1:name}\" type=\"${2:z3c.relationfield.schema.RelationList}\">",
             "  <title>${3:Related Items}</title>",
-            "  <value_type type=\"${4:plone.app.relationfield.Relation}\">",
+            "  <value_type type=\"z3c.relationfield.schema.RelationChoice\">",
             "    <title>${5:Related}</title>",
-            "    <source>${6:plone.formwidget.contenttree.obj_path_src_binder}</source>",
+            "    <portal_type>",
+            "      <element>${6|Document,News Item,Event,File,Image,Link,Collection,Folder|}</element>",
+            "      <element>${7|Document,News Item,Event,File,Image,Link,Collection,Folder|}</element>",
+            "    </portal_type>",
             "  </value_type>",
+            "  <required>${8|False,True|}</required>",
+            "  <readonly>False</readonly>",
             "</field>"
         ]
     },
-    "Bytes Field (Supermodel)": {
+    "Bytes Field": {
         "prefix": "plonebytesfield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Bytes}\">",
@@ -42,7 +52,7 @@
             "</field>"
         ]
     },
-    "BytesLine Field (Supermodel)": {
+    "BytesLine Field ": {
         "prefix": "plonebyteslinefield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.BytesLine}\">",
@@ -56,7 +66,7 @@
             "</field>"
         ]
     },
-    "ASCII Field (Supermodel)": {
+    "ASCII Field": {
         "prefix": "ploneasciifield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.ASCII}\">",
@@ -70,7 +80,7 @@
             "</field>"
         ]
     },
-    "ASCIILine Field (Supermodel)": {
+    "ASCIILine Field": {
         "prefix": "ploneasciilinefield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.ASCIILine}\">",
@@ -84,7 +94,7 @@
             "</field>"
         ]
     },
-    "Text Field (Supermodel)": {
+    "Text Field": {
         "prefix": "plonetextfield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Text}\">",
@@ -93,12 +103,10 @@
             "  <required>${5|False,True|}</required>",
             "  <default>${6}</default>",
             "  <readonly>False</readonly>",
-            "  <max_length></max_length>",
-            "  <min_length></min_length>",
             "</field>"
         ]
     },
-    "TextLine Field (Supermodel)": {
+    "TextLine Field": {
         "prefix": "plonetextlinefield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.TextLine}\">",
@@ -107,12 +115,10 @@
             "  <required>${5|False,True|}</required>",
             "  <default>${6}</default>",
             "  <readonly>False</readonly>",
-            "  <max_length></max_length>",
-            "  <min_length></min_length>",
             "</field>"
         ]
     },
-    "SourceText Field (Supermodel)": {
+    "SourceText Field": {
         "prefix": "plonesourcetextfield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.SourceText}\">",
@@ -121,12 +127,10 @@
             "  <required>${5|False,True|}</required>",
             "  <default>${6}</default>",
             "  <readonly>False</readonly>",
-            "  <max_length></max_length>",
-            "  <min_length></min_length>",
             "</field>"
         ]
     },
-    "URI Field (Supermodel)": {
+    "URI Field": {
         "prefix": "ploneurifield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.URI}\">",
@@ -135,12 +139,10 @@
             "  <required>${5|False,True|}</required>",
             "  <default>${6}</default>",
             "  <readonly>False</readonly>",
-            "  <max_length></max_length>",
-            "  <min_length></min_length>",
             "</field>"
         ]
     },
-    "Id Field (Supermodel)": {
+    "Id Field": {
         "prefix": "ploneidfield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Id}\">",
@@ -149,12 +151,10 @@
             "  <required>${5|False,True|}</required>",
             "  <default>${6}</default>",
             "  <readonly>False</readonly>",
-            "  <max_length></max_length>",
-            "  <min_length></min_length>",
             "</field>"
         ]
     },
-    "DottedName Field (Supermodel)": {
+    "DottedName Field": {
         "prefix": "plonedottednamefield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.DottedName}\">",
@@ -163,14 +163,14 @@
             "  <required>${5|False,True|}</required>",
             "  <default>${6}</default>",
             "  <readonly>False</readonly>",
-            "  <max_length></max_length>",
             "  <min_length></min_length>",
-            "  <max_dots></max_dots>",
+            "  <max_length></max_length>",
             "  <min_dots></min_dots>",
+            "  <max_dots></max_dots>",
             "</field>"
         ]
     },
-    "Password Field (Supermodel)": {
+    "Password Field": {
         "prefix": "plonepasswordfield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Password}\">",
@@ -179,12 +179,12 @@
             "  <required>${5|False,True|}</required>",
             "  <default>${6}</default>",
             "  <readonly>False</readonly>",
-            "  <max_length></max_length>",
             "  <min_length></min_length>",
+            "  <max_length></max_length>",
             "</field>"
         ]
     },
-    "Bool Field (Supermodel)": {
+    "Bool Field": {
         "prefix": "ploneboolfield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Bool}\">",
@@ -193,54 +193,65 @@
             "  <required>${5|False,True|}</required>",
             "  <default>${6}</default>",
             "  <readonly>False</readonly>",
-            "  <max_length></max_length>",
-            "  <min_length></min_length>",
             "</field>"
         ]
     },
-    "Int Field (Supermodel)": {
+    "Bool Field (SingleCheckBox)": {
+        "prefix": "ploneboolsinglecheckboxfield",
+        "body":[
+            "<field name=\"${1:name}\" type=\"${2:zope.schema.Bool}\">",
+            "  <title>${3}</title>",
+            "  <description>${4}</description>",
+            "  <form:widget type=\"plone.app.z3cform.widget.SingleCheckBoxBoolFieldWidget\"></form:widget>",
+            "  <required>${5|False,True|}</required>",
+            "  <default>${6}</default>",
+            "  <readonly>False</readonly>",
+            "</field>"
+        ]
+    },
+    "Int Field": {
         "prefix": "ploneintfield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Int}\">",
             "  <title>${3:title}</title>",
-            "  <description>${4:description}</description>",
+            "  <description>${4}</description>",
             "  <required>${5|False,True|}</required>",
             "  <default>${6}</default>",
             "  <readonly>False</readonly>",
-            "  <max_length></max_length>",
             "  <min_length></min_length>",
+            "  <max_length></max_length>",
             "</field>"
         ]
     },
-    "Float Field (Supermodel)": {
-        "prefix": "plonefloatfield",
-        "body":[
-            "<field name=\"${1:name}\" type=\"${2:zope.schema.Float}\">",
-            "  <title>${3:title}</title>",
-            "  <description>${4:description}</description>",
-            "  <required>${5|False,True|}</required>",
-            "  <default>${6}</default>",
-            "  <readonly>False</readonly>",
-            "  <max_length></max_length>",
-            "  <min_length></min_length>",
-            "</field>"
-        ]
-    },
-    "Decimal Field (Supermodel)": {
+    //"Float Field": {
+    //    "prefix": "plonefloatfield",
+    //    "body":[
+    //        "<field name=\"${1:name}\" type=\"${2:zope.schema.Float}\">",
+    //        "  <title>${3:title}</title>",
+    //        "  <description>${4:description}</description>",
+    //        "  <required>${5|False,True|}</required>",
+    //        "  <default>${6}</default>",
+    //        "  <readonly>False</readonly>",
+    //        "  <min_length></min_length>",
+    //        "  <max_length></max_length>",
+    //        "</field>"
+    //    ]
+    //},
+    "Decimal Field": {
         "prefix": "plonedecimalfield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Decimal}\">",
             "  <title>${3:title}</title>",
-            "  <description>${4:description}</description>",
+            "  <description>${4}</description>",
             "  <required>${5|False,True|}</required>",
             "  <default>${6}</default>",
             "  <readonly>False</readonly>",
-            "  <max_length></max_length>",
             "  <min_length></min_length>",
+            "  <max_length></max_length>",
             "</field>"
         ]
     },
-    "Date Field (Supermodel)": {
+    "Date Field": {
         "prefix": "plonedatefield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Date}\">",
@@ -249,12 +260,12 @@
             "  <required>${5|False,True|}</required>",
             "  <default>${6}</default>",
             "  <readonly>False</readonly>",
-            "  <max_length></max_length>",
             "  <min_length></min_length>",
+            "  <max_length></max_length>",
             "</field>"
         ]
     },
-    "Datetime Field (Supermodel)": {
+    "Datetime Field": {
         "prefix": "plonedatetimefield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Datetime}\">",
@@ -263,24 +274,24 @@
             "  <required>${5|False,True|}</required>",
             "  <default>${6}</default>",
             "  <readonly>False</readonly>",
-            "  <max_length></max_length>",
             "  <min_length></min_length>",
+            "  <max_length></max_length>",
             "</field>"
         ]
     },
-    "InterfaceField Field (Supermodel)": {
-        "prefix": "ploneinterfacefield",
-        "body":[
-            "<field name=\"${1:name}\" type=\"${2:zope.schema.InterfaceField}\">",
-            "  <title>${3:title}</title>",
-            "  <description>${4:description}</description>",
-            "  <required>${5|False,True|}</required>",
-            "  <readonly>${6|False,True|}</readonly>",
-            "  <default>${7:plone.supermodel.tests.IDummy}</default>",
-            "</field>"
-        ]
-    },
-    "Tuple Field (Supermodel)": {
+    //"InterfaceField Field": {
+    //    "prefix": "ploneinterfacefield",
+    //    "body":[
+    //        "<field name=\"${1:name}\" type=\"${2:zope.schema.InterfaceField}\">",
+    //        "  <title>${3:title}</title>",
+    //        "  <description>${4:description}</description>",
+    //        "  <required>${5|False,True|}</required>",
+    //        "  <readonly>False</readonly>",
+    //        "  <default>${7:plone.supermodel.tests.IDummy}</default>",
+    //        "</field>"
+    //    ]
+    //},
+    "Tuple Field": {
         "prefix": "plonetuplefield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Tuple}\">",
@@ -295,12 +306,12 @@
             "    <element>${6:element1}</element>",
             "    <element>${7:element2}</element>",
             "  </default>",
-            "  <max_length></max_length>",
             "  <min_length></min_length>",
+            "  <max_length></max_length>",
             "</field>"
         ]
     },
-    "List Field (Supermodel)": {
+    "List Field": {
         "prefix": "plonelistfield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.List}\">",
@@ -315,12 +326,10 @@
             "    <element>${9:1}</element>",
             "    <element>${10:2}</element>",
             "  </default>",
-            "  <max_length></max_length>",
-            "  <min_length></min_length>",
             "</field>"
         ]
     },
-    "Set Field (Supermodel)": {
+    "Set Field": {
         "prefix": "plonesetfield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Set}\">",
@@ -340,7 +349,7 @@
             "</field>"
         ]
     },
-    "FrozenSet Field (Supermodel)": {
+    "FrozenSet Field": {
         "prefix": "plonefrozensetfield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.FrozenSet}\">",
@@ -360,27 +369,27 @@
             "</field>"
         ]
     },
-    "Dict Field (Supermodel)": {
-        "prefix": "plonedictfield",
-        "body":[
-            "<field name=\"${1:name}\" type=\"${2:zope.schema.Dict}\">",
-            "  <title>${3:title}</title>",
-            "  <description>${4:description}</description>",
-            "  <required>${5|False,True|}</required>",
-            "  <readonly>${6|False,True|}</readonly>",
-            "  <default>",
-            "    <element key=${7:\"a\"}>${8:1}</element>",
-            "    <element key=${9:\"a\"}>${10:1}</element>",
-            "  </default>",
-            "  <value_type type=\"${11:zope.schema.TextLine}\">",
-            "    <title>${12:Val}</title>",
-            "  </value_type>",
-            "  <max_length></max_length>",
-            "  <min_length></min_length>",
-            "</field>"
-        ]
-    },
-    "Object Field (Supermodel)": {
+    //"Dict Field": {
+    //    "prefix": "plonedictfield",
+    //    "body":[
+    //        "<field name=\"${1:name}\" type=\"${2:zope.schema.Dict}\">",
+    //        "  <title>${3:title}</title>",
+    //        "  <description>${4:description}</description>",
+    //        "  <required>${5|False,True|}</required>",
+    //        "  <readonly>${6|False,True|}</readonly>",
+    //        "  <default>",
+    //        "    <element key=${7:\"a\"}>${8:1}</element>",
+    //        "    <element key=${9:\"a\"}>${10:1}</element>",
+    //        "  </default>",
+    //        "  <value_type type=\"${11:zope.schema.TextLine}\">",
+    //        "    <title>${12:Val}</title>",
+    //        "  </value_type>",
+    //        "  <min_length></min_length>",
+    //        "  <max_length></max_length>",
+    //        "</field>"
+    //    ]
+    //},
+    "Object Field": {
         "prefix": "ploneobjectfield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Object}\">",
@@ -392,7 +401,7 @@
             "</field>"
         ]
     },
-    "Choice Field (Supermodel)": {
+    "Choice Field": {
         "prefix": "plonechoicefield",
         "body": [
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Choice}\">",
@@ -405,7 +414,7 @@
             "</field>"
         ]
     },
-    "Multi Choice Field (Supermodel)": {
+    "Multi Choice Field": {
         "prefix": "plonemultichoicefield",
         "body": [
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Set}\">",
@@ -419,7 +428,7 @@
             "</field>"
         ]
     },
-    "DataGrid Field (Supermodel)": {
+    "DataGrid Field": {
         "prefix": "plonedatagridfield",
         "body": [
             "<field name=\"${1:name}\" type=\"${2:zope.schema.List}\">",
@@ -433,7 +442,7 @@
             "</field>"
         ]
     },
-    "File Field (Supermodel)": {
+    "File Field": {
         "prefix": "plonefilefiled",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:plone.namedfile.field.NamedBlobFile}\">",
@@ -444,7 +453,7 @@
             "</field>"
         ]
     },
-    "Image Field (Supermodel)": {
+    "Image Field": {
         "prefix": "ploneimagefiled",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:plone.namedfile.field.NamedBlobImage}\">",
