@@ -31,6 +31,10 @@
       {
         "language": "xml",
         "path": "./snippets/supermodel.json"
+      },
+      {
+        "language": "python",
+        "path": "./snippets/plone.json"
       }
     ]
   }

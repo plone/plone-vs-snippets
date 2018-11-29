@@ -1,0 +1,164 @@
+{
+    "Computed Field": {
+        "prefix": "PloneComputedField",
+        "body":[
+            "@property",
+            "def ${1:title}(self):",
+            "    return '{0} {1}'.format(",
+            "        self.${2:firstname},",
+            "        self.${3:lastname},",
+            "    )",
+            "",
+            "@${1}.setter",
+            "def ${1}(self, value):",
+            "    pass"
+        ]
+    },
+    "Field Mode": {
+        "prefix": "PloneFieldMode",
+        "body":[
+            "# You have to import: z3c.directives.interfaces.IEditForm",
+            "directives.mode(${1:IEditForm}, ${2:field_name}='${3|input,display,hidden|}')"
+        ]
+    },
+    "Field Readonly": {
+        "prefix": "PloneFieldReadonly",
+        "body":[
+            "directives.mode(${2:field_name}='display')"
+        ]
+    },
+    "Field Omitted": {
+        "prefix": "PloneFieldOmitted",
+        "body":[
+            "directives.omitted('${1:field_name}')"
+        ]
+    },
+    "Field No-Omit": {
+        "prefix": "PloneFieldNoOmit",
+        "body":[
+            "directives.no_omit('${1:field_name}')"
+        ]
+    },
+    "Field Order": {
+        "prefix": "PloneFieldOrder",
+        "body":[
+            "directives.order_${1|before,after|}(${2:field_name='${3|another_field_name,IDublinCore.title,*|}')"
+        ]
+    },
+    "Fieldset": {
+        "prefix": "PloneFieldset",
+        "body":[
+            "model.fieldset(",
+            "   '${1:fieldset_name}',",
+            "   label=u'${2:fieldset_label}',",
+            "   fields=[",
+            "       'field1_name',",
+            "       'field2_name'",
+            "   ],",
+            ")"
+        ]
+    },
+    "Field Read Permission": {
+        "prefix": "PloneFieldReadPermission",
+        "body":[
+            "directives.read_permission(${1:field_name}='${2|zope2.View,cmf.ManagePortal,cmf.ModifyPortalContent,cmf.ListFolderContents,zope2.AccessContentsInformation|')"
+        ]
+    },
+    "Field Write Permission": {
+        "prefix": "PloneFieldWritePermission",
+        "body":[
+            "directives.write_permission(${1:field_name}='${2|zope2.View,cmf.ManagePortal,cmf.ModifyPortalContent,cmf.ListFolderContents,zope2.AccessContentsInformation|')"
+        ]
+    },
+    "Field Widget": {
+        "prefix": "PloneFieldWidget",
+        "body":[
+            "# You have to import the widget!",
+            "# Check: https://docs.plone.org/external/plone.app.dexterity/docs/grok/reference/widgets.html#widgets  # NOQA: E501",
+            "directives.widget(${1:field_name}=${2|TextWidget,RadioFieldWidget,CheckBoxFieldWidget,SingleCheckBoxBoolFieldWidget,OptgroupFieldWidget,TextLinesFieldWidget,WysiwygFieldWidget,SelectFieldWidget,AjaxSelectFieldWidget,RelatedItemsFieldWidget,QueryStringFieldWidget,LinkFieldWidget|})"
+        ]
+    },
+    "Text Field": {
+        "prefix": "PloneTextField",
+        "body":[
+            "${1:name} = ${2:schema.Text}(",
+            "    title=u'${3}',",
+            "    description=u'${4}',",
+            "    required=${5|False,True|},",
+            "    default=u'${6}',",
+            "    readonly=${7|False,True|},",
+            ")"
+        ]
+    },
+    "TextLine Field": {
+        "prefix": "PloneTextLineField",
+        "body":[
+            "${1:name} = ${2:schema.TextLine}(",
+            "    title=u'${3}',",
+            "    description=u'${4}',",
+            "    required=${5|False,True|},",
+            "    default=u'${6}',",
+            "    readonly=${7|False,True|},",
+            ")"
+        ]
+    },
+    "Int Field": {
+        "prefix": "PloneIntField",
+        "body":[
+            "${1:name} = ${2:schema.Int}(",
+            "    title=u'${3}',",
+            "    description=u'${4}',",
+            "    required=${5|False,True|},",
+            "    default=${6},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ]
+    },
+    "Bool Field": {
+        "prefix": "PloneBoolField",
+        "body":[
+            "${1:name} = ${2:schema.Bool}(",
+            "    title=_(",
+            "        u'${3}'",
+            "    ),",
+            "    description=_(",
+            "        u'${4}'",
+            "    ),",
+            "    required=${5|False,True|},",
+            "    default=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ]
+    },
+    "Choice Field": {
+        "prefix": "PloneChoiceField",
+        "body":[
+            "${1:name} = ${2:schema.Choice}(",
+            "    title=u'${3}',",
+            "    description=u'${4}',",
+            "    vocabulary=${5:u'plone.app.vocabularies.PortalTypes'}',",
+            "    required=${6|False,True|},",
+            "    default=u'${7}',",
+            "    readonly=${8|False,True|},",
+            ")"
+        ]
+    },
+    "Multi Choice Field": {
+        "prefix": "PloneMultiChoiceField",
+        "body":[
+            "${1:name} = ${2:schema.Set}(",
+            "    title=u'${3}',",
+            "    description=u'${4}',",
+            "    value_type=schema.Choice(",
+            "        vocabulary=${5:u'plone.app.vocabularies.PortalTypes'}",
+            "    ),",
+            "    required=${6|False,True|},",
+            "    default=set([",
+            "        'Folder',",
+            "        'Image',",
+            "    ]),",
+            "    readonly=${8|False,True|},",
+            ")"
+        ]
+    }
+}
