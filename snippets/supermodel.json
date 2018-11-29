@@ -2,7 +2,7 @@
     "Set Widget": {
         "prefix": "plonewidget",
         "body":[
-            "<form:widget type=\"${1|z3c.form.browser.checkbox.CheckBoxFieldWidget,z3c.form.browser.checkbox.SingleCheckBoxFieldWidget,plone.z3cform.textlines.TextLinesFieldWidget,plone.app.z3cform.wysiwyg.WysiwygFieldWidget,plone.app.z3cform.widget.SelectFieldWidget,plone.app.z3cform.widget.AjaxSelectFieldWidget,plone.app.z3cform.widget.RelatedItemsFieldWidget,plone.app.z3cform.widget.QueryStringFieldWidget,plone.app.z3cform.widget.LinkFieldWidget|}\">",
+            "<form:widget type=\"${1|z3c.form.browser.text.TextWidget,z3c.form.browser.checkbox.CheckBoxFieldWidget,z3c.form.browser.checkbox.SingleCheckBoxFieldWidget,plone.z3cform.textlines.TextLinesFieldWidget,plone.app.z3cform.wysiwyg.WysiwygFieldWidget,plone.app.z3cform.widget.SelectFieldWidget,plone.app.z3cform.widget.AjaxSelectFieldWidget,plone.app.z3cform.widget.RelatedItemsFieldWidget,plone.app.z3cform.widget.QueryStringFieldWidget,plone.app.z3cform.widget.LinkFieldWidget|}\">",
             "  <klass>${2:my_css_class}</klass>",
             "</form:widget>"
         ]
@@ -354,15 +354,14 @@
         "body":[
             "<field name=\"${1:name}\" type=\"${2:zope.schema.FrozenSet}\">",
             "  <title>${3:title}</title>",
-            "  <description>${4:description}</description>",
+            "  <description>${4}</description>",
             "  <required>${5|False,True|}</required>",
             "  <readonly>${6|False,True|}</readonly>",
             "  <value_type type=\"${7:zope.schema.TextLine}\">",
             "    <title>${8:Val}</title>",
             "  </value_type>",
             "  <default>",
-            "    <element>${9:1}</element>",
-            "    <element>${10:2}</element>",
+            "    <element>Dummy</element>",
             "  </default>",
             "  <max_length></max_length>",
             "  <min_length></min_length>",
