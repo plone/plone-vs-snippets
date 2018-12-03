@@ -136,7 +136,7 @@
             "${1:name} = ${2:schema.Choice}(",
             "    title=u'${3}',",
             "    description=u'${4}',",
-            "    vocabulary=${5:u'plone.app.vocabularies.PortalTypes'}',",
+            "    vocabulary=${5:u'plone.app.vocabularies.PortalTypes'},",
             "    required=${6|False,True|},",
             "    default=u'${7}',",
             "    readonly=${8|False,True|},",
