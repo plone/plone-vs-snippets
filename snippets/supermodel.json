@@ -444,7 +444,7 @@
         ]
     },
     "File Field": {
-        "prefix": "plonefilefiled",
+        "prefix": "plonefilefield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:plone.namedfile.field.NamedBlobFile}\">",
             "  <title>${3:title}</title>",
@@ -455,7 +455,7 @@
         ]
     },
     "Image Field": {
-        "prefix": "ploneimagefiled",
+        "prefix": "ploneimagefield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:plone.namedfile.field.NamedBlobImage}\">",
             "  <title>${3:title}</title>",
