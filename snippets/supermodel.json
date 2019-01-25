@@ -464,6 +464,16 @@
             "  <readonly>False</readonly>",
             "</field>"
         ]
+    },
+    "Rich Text Field": {
+        "prefix": "plonerichtextfield",
+        "body":[
+            "<field name=\"${1:name}\" type=\"plone.app.textfield.RichText\">",
+            "  <title>${2:title}</title>",
+            "  <description>${3:description}</description>",
+            "  <required>${4|False,True|}</required>",
+            "</field>"
+        ]
     }
 
 }
