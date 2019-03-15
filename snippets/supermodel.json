@@ -446,7 +446,7 @@
         ]
     },
     "File Field": {
-        "prefix": "plonefilefiled",
+        "prefix": "plonefilefield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:plone.namedfile.field.NamedBlobFile}\">",
             "  <title i18n:translate="">${3:title}</title>",
@@ -457,13 +457,23 @@
         ]
     },
     "Image Field": {
-        "prefix": "ploneimagefiled",
+        "prefix": "ploneimagefield",
         "body":[
             "<field name=\"${1:name}\" type=\"${2:plone.namedfile.field.NamedBlobImage}\">",
             "  <title i18n:translate="">${3:title}</title>",
             "  <description i18n:translate="">${4:description}</description>",
             "  <required>${5|False,True|}</required>",
             "  <readonly>False</readonly>",
+            "</field>"
+        ]
+    },
+    "Rich Text Field": {
+        "prefix": "plonerichtextfield",
+        "body":[
+            "<field name=\"${1:name}\" type=\"plone.app.textfield.RichText\">",
+            "  <title>${2:title}</title>",
+            "  <description>${3:description}</description>",
+            "  <required>${4|False,True|}</required>",
             "</field>"
         ]
     }
