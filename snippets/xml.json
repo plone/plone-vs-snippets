@@ -28,10 +28,9 @@
             "<field name=\"${1:name}\" type=\"${2:zope.schema.Bool}\">",
             "  <title i18n:translate=\"\">${3}</title>",
             "  <description i18n:translate=\"\">${4}</description>",
-            "  <required>${5|False,True|}</required>",
-            "  <default>${6}</default>",
-            "  <required>${7|False,True|}</required>",
-            "  <readonly>${8|False,True|}</readonly>",
+            "  <default>${5}</default>",
+            "  <required>${6|False,True|}</required>",
+            "  <readonly>${7|False,True|}</readonly>",
             "</field>"
         ],
         "prefix": "PloneBoolField"
@@ -42,10 +41,9 @@
             "  <title i18n:translate=\"\">${3}</title>",
             "  <description i18n:translate=\"\">${4}</description>",
             "  <form:widget type=\"plone.app.z3cform.widget.SingleCheckBoxBoolFieldWidget\"></form:widget>",
-            "  <required>${5|False,True|}</required>",
-            "  <default>${6}</default>",
-            "  <required>${7|False,True|}</required>",
-            "  <readonly>${8|False,True|}</readonly>",
+            "  <default>${5}</default>",
+            "  <required>${6|False,True|}</required>",
+            "  <readonly>${7|False,True|}</readonly>",
             "</field>"
         ],
         "prefix": "PloneBoolSingleCheckBoxField"
