@@ -1,8 +1,13 @@
-# plone-vs-snippets
+# Plone Snippets
 
 ## Visual Studio Code Snippets for Plone
 
-Currently this extension provides a good set of XML/Supermodel snippets and some basic Python/zope.schema snippets (more will come soon).
+![Plone logo](https://github.com/plone/plone-vs-snippets/raw/master/images/plone.png)
+
+* [plone.org (Community)](https://plone.org)
+* [plone.com (Features/Show cases)](https://plone.com)
+
+Currently this extension provides a good set of XML-Registry and Supermodel snippets and some basic Python/zope.schema snippets (more will come soon).
 You also have useful snippets to setup fieldsets and custom widgets.
 
 ## Install
@@ -14,4 +19,4 @@ You have to reload the editor window or restart vs code, to load the snippets.
 
 If you have ideas to improve this extension, let us know! You can add an issue in this repository or even better make a pull request with your improvements.
 
-We are also very welcoming any help in improving the quality and usefulness of this snippets.
+We are also very welcoming any help in improving the quality and usefulness of these snippets.
