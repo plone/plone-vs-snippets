@@ -1,8 +1,22 @@
 Changelog
 =========
 
+0.2.0 (unreleased)
 
-0.1.0 (unreleased)
+- Add i18n:translate tags to title and description in supermodel snippets
+  [erral]
+
+- Add RichTextField snippet
+  [erral]
+
+- Fix some snippet names
+  [erral]
+
+- Complete Python Snippets, sync them with the XML Snippets and make some of them more flexible
+  [MrTango]
+
+
+0.1.0 (2019-04-11)
 ------------------
 
 - first snippets for XML based (supermodel) models

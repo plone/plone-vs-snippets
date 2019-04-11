@@ -1,7 +1,198 @@
 {
+    "ASCII Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.ASCII}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    required=${5|False,True|},",
+            "    default='',",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneAsciiField"
+    },
+    "ASCIILine Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.ASCIILine}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    required=${5|False,True|},",
+            "    default='',",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneAsciiLineField"
+    },
+    "Bool Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.Bool}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}'",
+            "    ),",
+            "    required=${5|False,True|},",
+            "    default=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneBoolField"
+    },
+    "Bool Field (SingleCheckBox) (plone.schema)": {
+        "body": [
+            "# Make sure you import:",
+            "# plone.app.z3cform.widget.SingleCheckBoxBoolFieldWidget",
+            "directives.widget(${1:name}=SingleCheckBoxBoolFieldWidget)",
+            "${1:name} = ${2:schema.Bool}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    required=${5|False,True|},",
+            "    default=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneBoolSingleCheckBoxField"
+    },
+    "Bytes Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.Bytes}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    required=${5|False,True|},",
+            "    readonly=${6|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneBytesField"
+    },
+    "BytesLine Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.BytesLine}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    required=${5|False,True|},",
+            "    default=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneBytesLineField"
+    },
+    "Choice Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.Choice}(",
+            "    title=u'${3}',",
+            "    description=u'${4}',",
+            "    vocabulary=\"${5:u'plone.app.vocabularies.PortalTypes'}\",",
+            "    default=u'${6}',",
+            "    required=${7|False,True|},",
+            "    readonly=${8|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneChoiceField"
+    },
+    "DataGrid Field (plone.schema)": {
+        "body": [
+            "# Make sure you import: collective.z3cform.datagridfield",
+            "directives.widget(${1:name}=datagridfield.DataGridFieldFactory)",
+            "${1:name} = ${2:schema.List}(",
+            "    title=u'${3}',",
+            "    description=u'${4}',",
+            "    value_type=datagridfield.DictRow(",
+            "        title=${5:u'tablerow'}, schema=${6:ITableRowSchema}),",
+            ")"
+        ],
+        "prefix": "PloneDataGridField"
+    },
+    "Date Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.Date}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default='',",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneDateField"
+    },
+    "Datetime Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.Datetime}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default='',",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneDatetimeField"
+    },
+    "Decimal Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.Decimal}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default='',",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneDecimalField"
+    },
+    "DottedName Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.DottedName}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default=${5|False,True|},",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            "    # min_length=6,",
+            "    # max_length=20,",
+            "    # min_dots=1,",
+            "    # max_dots=3,",
+            ")"
+        ],
+        "prefix": "PloneDottedNameField"
+    },
     "Computed Field": {
-        "prefix": "PloneComputedField",
-        "body":[
+        "body": [
             "@property",
             "def ${1:title}(self):",
             "    return '{0} {1}'.format(",
@@ -12,145 +203,206 @@
             "@${1}.setter",
             "def ${1}(self, value):",
             "    pass"
-        ]
+        ],
+        "prefix": "PloneComputedField"
     },
-    "Field Mode": {
-        "prefix": "PloneFieldMode",
-        "body":[
-            "# You have to import: z3c.directives.interfaces.IEditForm",
-            "directives.mode(${1:IEditForm}, ${2:field_name}='${3|input,display,hidden|}')"
-        ]
+    "Field Mode (plone.autoform)": {
+        "body": [
+            "# You have to import:",
+            "# z3c.form.interfaces.IForm / z3c.form.interfaces.IEditForm",
+            "directives.mode(${1|IForm,IEditForm|}, ${2:field_name}='${3|input,display,hidden|}')"
+        ],
+        "prefix": "PloneFieldMode"
     },
-    "Field Readonly": {
-        "prefix": "PloneFieldReadonly",
-        "body":[
-            "directives.mode(${2:field_name}='display')"
-        ]
-    },
-    "Field Omitted": {
-        "prefix": "PloneFieldOmitted",
-        "body":[
-            "directives.omitted('${1:field_name}')"
-        ]
-    },
-    "Field No-Omit": {
-        "prefix": "PloneFieldNoOmit",
-        "body":[
+    "Field No-Omit (plone.autoform)": {
+        "body": [
             "directives.no_omit('${1:field_name}')"
-        ]
+        ],
+        "prefix": "PloneFieldNoOmit"
     },
-    "Field Order": {
-        "prefix": "PloneFieldOrder",
-        "body":[
+    "Field Omitted (plone.autoform)": {
+        "body": [
+            "directives.omitted('${1:field_name}')"
+        ],
+        "prefix": "PloneFieldOmitted"
+    },
+    "Field Order (plone.autoform)": {
+        "body": [
             "directives.order_${1|before,after|}(${2:field_name='${3|another_field_name,IDublinCore.title,*|}')"
-        ]
+        ],
+        "prefix": "PloneFieldOrder"
     },
-    "Fieldset": {
-        "prefix": "PloneFieldset",
-        "body":[
+    "Field Permission (plone.autoform)": {
+        "body": [
+            "directives.${1|read_permission,write_permission|}(${2:field_name}='${3|zope2.View,cmf.ManagePortal,cmf.ModifyPortalContent,cmf.ListFolderContents,zope2.AccessContentsInformation|}')"
+        ],
+        "prefix": "PloneFieldPermission"
+    },
+    "Field Widget (plone.autoform)": {
+        "body": [
+            "# You have to import the widget!",
+            "# Check: https://docs.plone.org/external/plone.app.dexterity/docs/grok/reference/widgets.html#widgets  # NOQA: E501",
+            "directives.widget(${1:field_name}=${2|TextWidget,RadioFieldWidget,CheckBoxFieldWidget,SingleCheckBoxBoolFieldWidget,OptgroupFieldWidget,TextLinesFieldWidget,WysiwygFieldWidget,SelectFieldWidget,AjaxSelectFieldWidget,RelatedItemsFieldWidget,QueryStringFieldWidget,LinkFieldWidget|})"
+        ],
+        "prefix": "PloneFieldWidget"
+    },
+    "Fieldset (plone.autoform)": {
+        "body": [
             "model.fieldset(",
             "   '${1:fieldset_name}',",
             "   label=u'${2:fieldset_label}',",
             "   fields=[",
             "       'field1_name',",
-            "       'field2_name'",
+            "       'field2_name',",
             "   ],",
             ")"
-        ]
+        ],
+        "prefix": "PloneFieldset"
     },
-    "Field Read Permission": {
-        "prefix": "PloneFieldReadPermission",
-        "body":[
-            "directives.read_permission(${1:field_name}='${2|zope2.View,cmf.ManagePortal,cmf.ModifyPortalContent,cmf.ListFolderContents,zope2.AccessContentsInformation|')"
-        ]
-    },
-    "Field Write Permission": {
-        "prefix": "PloneFieldWritePermission",
-        "body":[
-            "directives.write_permission(${1:field_name}='${2|zope2.View,cmf.ManagePortal,cmf.ModifyPortalContent,cmf.ListFolderContents,zope2.AccessContentsInformation|')"
-        ]
-    },
-    "Field Widget": {
-        "prefix": "PloneFieldWidget",
-        "body":[
-            "# You have to import the widget!",
-            "# Check: https://docs.plone.org/external/plone.app.dexterity/docs/grok/reference/widgets.html#widgets  # NOQA: E501",
-            "directives.widget(${1:field_name}=${2|TextWidget,RadioFieldWidget,CheckBoxFieldWidget,SingleCheckBoxBoolFieldWidget,OptgroupFieldWidget,TextLinesFieldWidget,WysiwygFieldWidget,SelectFieldWidget,AjaxSelectFieldWidget,RelatedItemsFieldWidget,QueryStringFieldWidget,LinkFieldWidget|})"
-        ]
-    },
-    "Text Field": {
-        "prefix": "PloneTextField",
-        "body":[
-            "${1:name} = ${2:schema.Text}(",
-            "    title=u'${3}',",
-            "    description=u'${4}',",
-            "    required=${5|False,True|},",
-            "    default=u'${6}',",
+    "File Field (plone.namedfile)": {
+        "body": [
+            "# Make sure you import: plone.namedfile",
+            "${1:name} = ${2:namedfile.NamedBlobFile}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default='',",
+            "    required=${6|False,True|},",
             "    readonly=${7|False,True|},",
             ")"
-        ]
+        ],
+        "prefix": "PloneFileField"
     },
-    "TextLine Field": {
-        "prefix": "PloneTextLineField",
-        "body":[
-            "${1:name} = ${2:schema.TextLine}(",
-            "    title=u'${3}',",
-            "    description=u'${4}',",
-            "    required=${5|False,True|},",
-            "    default=u'${6}',",
+    "Float Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.Float}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default='${5}',",
+            "    required=${6|False,True|},",
             "    readonly=${7|False,True|},",
             ")"
-        ]
+        ],
+        "prefix": "PloneFloatField"
     },
-    "Int Field": {
-        "prefix": "PloneIntField",
-        "body":[
+    "FrozenSet Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.FrozenSet}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    value_type=schema.TextLine(title=''),",
+            "    default='${5}',",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneFrozenSetField"
+    },
+    "Id Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.Id}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default=${5},",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneIdField"
+    },
+    "Image Field (plone.namedfile)": {
+        "body": [
+            "# Make sure you import: plone.namedfile",
+            "${1:name} = ${2:namedfile.NamedBlobImage}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default=${5},",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneImageField"
+    },
+    "Int Field (plone.schema)": {
+        "body": [
             "${1:name} = ${2:schema.Int}(",
-            "    title=u'${3}',",
-            "    description=u'${4}',",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
             "    required=${5|False,True|},",
             "    default=${6},",
             "    readonly=${7|False,True|},",
             ")"
-        ]
+        ],
+        "prefix": "PloneIntField"
     },
-    "Bool Field": {
-        "prefix": "PloneBoolField",
-        "body":[
-            "${1:name} = ${2:schema.Bool}(",
+    "InterfaceField Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.InterfaceField}(",
             "    title=_(",
-            "        u'${3}'",
+            "        u'${3}',",
             "    ),",
             "    description=_(",
-            "        u'${4}'",
+            "        u'${4}',",
             "    ),",
             "    required=${5|False,True|},",
-            "    default=${6|False,True|},",
+            "    default=${6:plone.supermodel.tests.IDummy},",
             "    readonly=${7|False,True|},",
             ")"
-        ]
+        ],
+        "prefix": "PloneInterfaceField"
     },
-    "Choice Field": {
-        "prefix": "PloneChoiceField",
-        "body":[
-            "${1:name} = ${2:schema.Choice}(",
-            "    title=u'${3}',",
-            "    description=u'${4}',",
-            "    vocabulary=${5:u'plone.app.vocabularies.PortalTypes'},",
+    "List Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.List}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    value_type=schema.TextLine(",
+            "        title='${5}',",
+            "    ),",
             "    required=${6|False,True|},",
-            "    default=u'${7}',",
-            "    readonly=${8|False,True|},",
+            "    readonly=${7|False,True|},",
             ")"
-        ]
+        ],
+        "prefix": "PloneListField"
     },
-    "Multi Choice Field": {
-        "prefix": "PloneMultiChoiceField",
-        "body":[
+    "Multi Choice Field (plone.schema)": {
+        "body": [
             "${1:name} = ${2:schema.Set}(",
-            "    title=u'${3}',",
-            "    description=u'${4}',",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
             "    value_type=schema.Choice(",
-            "        vocabulary=${5:u'plone.app.vocabularies.PortalTypes'}",
+            "        vocabulary=\"${5:u'plone.app.vocabularies.PortalTypes'}\",",
             "    ),",
             "    required=${6|False,True|},",
             "    default=set([",
@@ -159,6 +411,164 @@
             "    ]),",
             "    readonly=${8|False,True|},",
             ")"
-        ]
+        ],
+        "prefix": "PloneMultiChoiceField"
+    },
+    "Password Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.Password}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    required=${5|False,True|},",
+            "    default=u'${6}',",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PlonePasswordField"
+    },
+    "Relation Choice Field (single) (z3c.relationfield)": {
+        "body": [
+            "# Make sure to import: z3c.relationfield",
+            "${1:name} = ${2:relationfield.schema.RelationChoice}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    source=CatalogSource(",
+            "        portal_type='${5|Document,News Item,Event,File,Image,Link,Collection,Folder|}',",
+            "    ),",
+            "    default=u'${6}',",
+            "    required=${7|False,True|},",
+            "    readonly=${8|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneRelationChoiceField"
+    },
+    "Relation List Field (multi) (z3c.relationfield)": {
+        "body": [
+            "# Make sure to import: z3c.relationfield",
+            "${1:name} = ${2:relationfield.schema.RelationList}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    value_type=relationfield.schema.RelationChoice(",
+            "       title=u'${5:Related}',",
+            "       source=CatalogSource(",
+            "           portal_type='${6|Document,News Item,Event,File,Image,Link,Collection,Folder|}',",
+            "       ),",
+            "    ),",
+            "    default=u'${7}',",
+            "    required=${8|False,True|},",
+            "    readonly=${9|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneRelationListField"
+    },
+    "RichText Field (plone.app.textfield)": {
+        "body": [
+            "# Make sure to import: plone.app.textfield",
+            "${1:name} = ${2:textfield.RichText}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default=u'${5}',",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneRichTextField"
+    },
+    "SourceText Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.SourceText}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default=u'${5}',",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneSourceTextField"
+    },
+    "Text Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.Text}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default=u'${5}',",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneTextField"
+    },
+    "TextLine Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.TextLine}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default=u'${5}',",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneTextLineField"
+    },
+    "Tuple Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.Tuple}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    value_type=schema.TextLine(title=''),",
+            "    default='${5}',",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneTupleField"
+    },
+    "URI Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.URI}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default=u'${5}',",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneURIField"
     }
 }
