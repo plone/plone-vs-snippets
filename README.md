@@ -2,7 +2,7 @@
 
 ## Visual Studio Code Snippets for Plone
 
-![Plone logo](https://github.com/plone/plone-vs-snippets/raw/master/images/plone.png)
+![Plone logo](https://github.com/plone/plone-vs-snippets/raw/master/images/plone-logo-128.png)
 
 * [plone.org (Community)](https://plone.org)
 * [plone.com (Features/Show cases)](https://plone.com)

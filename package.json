@@ -1,41 +1,46 @@
 {
-  "name": "plone-vs-snippets",
-  "displayName": "Plone Snippets",
-  "version": "0.1.0",
-  "publisher": "plone",
-  "description": "VS Code Snippets for the Python based CMS Plone",
-  "icon": "images/plone.png",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/plone/plone-vs-snippets.git"
-  },
-  "engines": {
-    "vscode": "^1.12.0"
-  },
-  "categories": [
-    "Snippets"
-  ],
-  "keywords": [
-    "plone",
-    "snippets",
-    "vs code"
-  ],
-  "author": "MrTango",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/plone/plone-vs-snippets/issues"
-  },
-  "homepage": "https://github.com/plone/plone-vs-snippets#readme",
-  "contributes": {
-    "snippets": [
-      {
-        "language": "xml",
-        "path": "./snippets/xml.json"
-      },
-      {
-        "language": "python",
-        "path": "./snippets/python.json"
-      }
-    ]
-  }
+	"name": "plone-vs-snippets",
+	"displayName": "Plone Snippets",
+	"version": "0.1.0",
+	"publisher": "Derico",
+	"description": "VS Code Snippets for the Python based CMS Plone",
+	"icon": "images/plone.png",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/plone/plone-vs-snippets.git"
+	},
+	"engines": {
+		"vscode": "^1.12.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"plone",
+		"snippets",
+		"vs code"
+	],
+	"author": "MrTango",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/plone/plone-vs-snippets/issues"
+	},
+	"homepage": "https://github.com/plone/plone-vs-snippets#readme",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "xml",
+				"path": "./snippets/xml.json"
+			},
+			{
+				"language": "python",
+				"path": "./snippets/python.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "d749f4d0-2cc2-42b2-aeac-4dedd4e7774d",
+		"publisherDisplayName": "Derico",
+		"publisherId": "fbb21e6e-787e-48f8-ae18-ae6841010665"
+	}
 }
