@@ -7,7 +7,7 @@
 	"icon": "images/plone.png",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/plone/plone-vs-snippets.git"
+		"url": "https://github.com/plone/plone-vs-snippets.git"
 	},
 	"engines": {
 		"vscode": "^1.12.0"
