@@ -7,12 +7,17 @@
 * [plone.org (Community)](https://plone.org)
 * [plone.com (Features/Show cases)](https://plone.com)
 
-Currently this extension provides a good set of XML-Registry and Supermodel snippets and some basic Python/zope.schema snippets (more will come soon).
-You also have useful snippets to setup fieldsets and custom widgets.
+Currently this extension provides a good set of XML-Registry and Supermodel Snippets, as well as Python Snippets.
+You also have useful ``plone.autoform`` Snippets to setup fieldsets and custom widgets.
+
+
+### Plone XML Snippets for VS Code
 
 ![Plone XML Snippets for VS Code](https://github.com/plone/plone-vs-snippets/raw/master/images/vs-code-snippets-xml.gif)
 
-![Plone XML Snippets for VS Code](https://github.com/plone/plone-vs-snippets/raw/master/images/vs-code-snippets-python.gif)
+### Plone Python Snippets for VS Code
+
+![Plone Python Snippets for VS Code](https://github.com/plone/plone-vs-snippets/raw/master/images/vs-code-snippets-python.gif)
 
 
 ## Install
