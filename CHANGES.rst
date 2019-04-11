@@ -1,7 +1,13 @@
 Changelog
 =========
 
-0.2.0 (unreleased)
+0.3.1 (2019-04-11)
+
+- Add usage GIF animations and update readme
+  [MrTango]
+
+
+0.3.0 (2019-04-11)
 
 - Add i18n:translate tags to title and description in supermodel snippets
   [erral]
