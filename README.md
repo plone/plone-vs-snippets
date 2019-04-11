@@ -10,6 +10,11 @@
 Currently this extension provides a good set of XML-Registry and Supermodel snippets and some basic Python/zope.schema snippets (more will come soon).
 You also have useful snippets to setup fieldsets and custom widgets.
 
+![Plone XML Snippets for VS Code](https://github.com/plone/plone-vs-snippets/raw/master/images/vs-code-snippets-xml.gif)
+
+![Plone XML Snippets for VS Code](https://github.com/plone/plone-vs-snippets/raw/master/images/vs-code-snippets-python.gif)
+
+
 ## Install
 
 To install it manually in your VS Code editor, check out this repository and symlink it under the name "plone-snippets" into your extensions directory on Linux usually: `~/.vscode/extensions/`.
