@@ -102,7 +102,7 @@
             "${1:name} = ${2:schema.Choice}(",
             "    title=u'${3}',",
             "    description=u'${4}',",
-            "    vocabulary=\"${5:u'plone.app.vocabularies.PortalTypes'}\",",
+            "    vocabulary=${5:u'plone.app.vocabularies.PortalTypes'},",
             "    default=u'${6}',",
             "    required=${7|False,True|},",
             "    readonly=${8|False,True|},",

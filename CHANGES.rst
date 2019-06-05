@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.3.2 (UNRELEASED)
+
+- Fix vocabulary definition in python choice snippet
+  [erral]
+
 0.3.1 (2019-04-11)
 
 - Add usage GIF animations and update readme
