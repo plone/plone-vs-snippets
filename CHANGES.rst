@@ -6,6 +6,10 @@ Changelog
 - Fix vocabulary definition in python choice snippet
   [erral]
 
+- Add missing `_` calls
+  [erral]
+
+
 0.3.1 (2019-04-11)
 
 - Add usage GIF animations and update readme
