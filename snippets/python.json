@@ -410,7 +410,7 @@
             "        u'${4}',",
             "    ),",
             "    value_type=schema.Choice(",
-            "        vocabulary=\"${5:u'plone.app.vocabularies.PortalTypes'}\",",
+            "        vocabulary=${5:u'plone.app.vocabularies.PortalTypes'},",
             "    ),",
             "    required=${6|False,True|},",
             "    default=set([",
