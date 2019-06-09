@@ -298,7 +298,7 @@
     },
     "Multi Choice Field (plone.supermodel)": {
         "body": [
-            "<field name=\"${1:name}\" type=\"${2:zope.schema.Set}\">",
+            "<field name=\"${1:name}\" type=\"${2|zope.schema.Set,zope.schema.List|}\">",
             "  <title i18n:translate=\"\">${3:title}</title>",
             "  <description i18n:translate=\"\">${4:description}</description>",
             "  <value_type type=\"${5:zope.schema.Choice}\">",

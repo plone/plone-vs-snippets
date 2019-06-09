@@ -402,7 +402,7 @@
     },
     "Multi Choice Field (plone.schema)": {
         "body": [
-            "${1:name} = ${2:schema.Set}(",
+            "${1:name} = ${2|schema.Set,schema.List|}(",
             "    title=_(",
             "        u'${3}',",
             "    ),",

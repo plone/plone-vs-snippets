@@ -1,7 +1,19 @@
 Changelog
 =========
 
-0.3.2 (UNRELEASED)
+0.3.4 (2019-06-09)
+
+- Allow choosing the field type (Set/List) when using PloneMultiChoiceField snippet
+  [MrTango]
+
+
+0.3.3 (2019-06-09)
+
+- Fix PloneMultiChoiceField vocabulary definition
+  [MrTango]
+
+
+0.3.2 (2019-06-09)
 
 - Fix vocabulary definition in python choice snippet
   [erral]
