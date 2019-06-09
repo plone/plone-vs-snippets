@@ -1,7 +1,7 @@
 {
 	"name": "plone-vs-snippets",
 	"displayName": "Plone Snippets",
-	"version": "0.3.3",
+	"version": "0.3.4",
 	"publisher": "Derico",
 	"description": "VS Code Snippets for the Python based CMS Plone",
 	"icon": "images/plone.png",
