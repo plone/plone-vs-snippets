@@ -11,11 +11,11 @@ Currently this extension provides a good set of XML-Registry and Supermodel Snip
 You also have useful ``plone.autoform`` Snippets to setup fieldsets and custom widgets.
 
 
-### Plone XML Snippets for VS Code
+### Plone XML (supermodel) Snippets for VS Code
 
 ![Plone XML Snippets for VS Code](https://github.com/plone/plone-vs-snippets/raw/master/images/vs-code-snippets-xml.gif)
 
-### Plone Python Snippets for VS Code
+### Plone Python (plone.schema) Snippets for VS Code
 
 ![Plone Python Snippets for VS Code](https://github.com/plone/plone-vs-snippets/raw/master/images/vs-code-snippets-python.gif)
 

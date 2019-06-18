@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.4.0 (2019-06-18)
+
+- Add PloneRedirect snippet (Python)
+  [MrTango]
+
 0.3.4 (2019-06-09)
 
 - Allow choosing the field type (Set/List) when using PloneMultiChoiceField snippet

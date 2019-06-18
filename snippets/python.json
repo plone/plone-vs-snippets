@@ -578,5 +578,11 @@
             ")"
         ],
         "prefix": "PloneURIField"
+    },
+    "response/redirect (Python)": {
+        "body": [
+            "return self.request.response.redirect(${1:self.context.absolute_url()}, status=301)"
+        ],
+        "prefix": "PloneRedirect"
     }
 }
