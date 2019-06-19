@@ -506,5 +506,19 @@
             "</field>"
         ],
         "prefix": "PloneUriField"
+    },
+    "Catalog Metadata Column (catalog.xml)": {
+        "body": [
+            "<column value=\"${1}\" />"
+        ],
+        "prefix": "PloneCatalogColumn"
+    },
+    "Catalog Index (catalog.xml)": {
+        "body": [
+            "<index name=\"${1}\" meta_type=\"${2|FieldIndex,KeywordIndex|}\">",
+            "  <indexed_attr value=\"${1}\" />",
+            "</index>"
+        ],
+        "prefix": "PloneCatalogIndex"
     }
 }

@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.5.0 (2019-06-19)
+
+- Add catalog.xml snippets like index and column
+  [MrTango]
+
 0.4.0 (2019-06-18)
 
 - Add PloneRedirect snippet (Python)
