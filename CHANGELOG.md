@@ -6,6 +6,9 @@ Changelog
 - Add catalog.xml snippets like index and column
   [MrTango]
 
+- Fix string types for title attributes in some Python snippets (Python)
+  [MrTango]
+
 0.4.0 (2019-06-18)
 
 - Add PloneRedirect snippet (Python)
