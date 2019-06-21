@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.5.1 (UNRELEASED)
+
+- Fix PloneImageField snippet for supermodel files
+  [erral]
+
 0.5.0 (2019-06-19)
 
 - Add catalog.xml snippets like index and column
