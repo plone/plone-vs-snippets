@@ -243,7 +243,7 @@
     },
     "Image Field (plone.supermodel)": {
         "body": [
-            "<field name=\"${1:name}\" type=\"${2:plone.namedfile.NamedBlobImage}\">",
+            "<field name=\"${1:name}\" type=\"${2:plone.namedfile.field.NamedBlobImage}\">",
             "  <title i18n:translate=\"\">${3:title}</title>",
             "  <description i18n:translate=\"\">${4:description}</description>",
             "  <required>${5|False,True|}</required>",
