@@ -3,6 +3,9 @@ Changelog
 
 0.5.2 (2019-8-14)
 
+- Remove default empty value for date and datetime fields
+  [erral]
+
 - Fix PloneImageField snippet for supermodel files
   [erral]
 
