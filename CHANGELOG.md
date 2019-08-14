@@ -18,6 +18,9 @@ Changelog
 - Fix Fieldset indention in Python files
   [MrTango]
 
+- Remove invalid option "required" for PloneImageField in Python files
+  [MrTango]
+
 0.5.1 (2019-07-05)
 
 - Add plone.app.querystring.operation.string.is to PloneRegQueryField operations
