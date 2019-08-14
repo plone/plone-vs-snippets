@@ -24,6 +24,9 @@ Changelog
 - Fix PloneFieldOrder syntax and add IBasic.title to the options
   [MrTango]
 
+- Add PloneFieldWidgetPatternOptions to Python files snippets
+  [MrTango]
+
 0.5.1 (2019-07-05)
 
 - Add plone.app.querystring.operation.string.is to PloneRegQueryField operations
