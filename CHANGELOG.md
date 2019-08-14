@@ -9,6 +9,9 @@ Changelog
 - Improve import note for Relation fields for Python files
   [MrTango]
 
+- Add more querystring operations to PloneRegQueryField
+  [MrTango]
+
 0.5.1 (2019-07-05)
 
 - Add plone.app.querystring.operation.string.is to PloneRegQueryField operations
