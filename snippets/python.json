@@ -344,6 +344,8 @@
             "    description=_(",
             "        u'${4}',",
             "    ),",
+            "    required=${5|False,True|},",
+            "    readonly=${6|False,True|},",
             ")"
         ],
         "prefix": "PloneImageField"

@@ -18,9 +18,6 @@ Changelog
 - Fix Fieldset indention in Python files
   [MrTango]
 
-- Remove invalid option "required" for PloneImageField in Python files
-  [MrTango]
-
 - Fix note for plone.namedfile import for PloneImageField in Python files
   [MrTango]
 
