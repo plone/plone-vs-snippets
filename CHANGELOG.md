@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.2 (UNRELEASED)
+0.5.2 (2019-8-14)
 
 - Fix PloneImageField snippet for supermodel files
   [erral]
