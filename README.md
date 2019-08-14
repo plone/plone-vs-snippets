@@ -22,6 +22,10 @@ You also have useful ``plone.autoform`` Snippets to setup fieldsets and custom w
 
 ## Install
 
+This extension is already in the official Extension Marketplace and can ve installed directly from VS Code.
+
+### Manual Install
+
 To install it manually in your VS Code editor, check out this repository and symlink it under the name "plone-snippets" into your extensions directory on Linux usually: `~/.vscode/extensions/`.
 You have to reload the editor window or restart vs code, to load the snippets.
 
