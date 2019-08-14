@@ -336,7 +336,7 @@
     },
     "Image Field (plone.namedfile)": {
         "body": [
-            "# Make sure you import: plone.namedfile",
+            "# Make sure you import: plone.namedfile.field as namedfile",
             "${1:name} = ${2:namedfile.NamedBlobImage}(",
             "    title=_(",
             "        u'${3}',",
