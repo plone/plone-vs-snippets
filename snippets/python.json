@@ -258,12 +258,12 @@
     "Fieldset (plone.autoform)": {
         "body": [
             "model.fieldset(",
-            "   '${1:fieldset_name}',",
-            "   label=u'${2:fieldset_label}',",
-            "   fields=[",
-            "       'field1_name',",
-            "       'field2_name',",
-            "   ],",
+            "    '${1:fieldset_name}',",
+            "    label=u'${2:fieldset_label}',",
+            "    fields=[",
+            "        'field1_name',",
+            "        'field2_name',",
+            "    ],",
             ")"
         ],
         "prefix": "PloneFieldset"

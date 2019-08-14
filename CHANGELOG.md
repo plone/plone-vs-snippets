@@ -15,6 +15,9 @@ Changelog
 - Add defaultFactory to ChoiceFields in Python files
   [MrTango]
 
+- Fix Fieldset indention in Python files
+  [MrTango]
+
 0.5.1 (2019-07-05)
 
 - Add plone.app.querystring.operation.string.is to PloneRegQueryField operations
