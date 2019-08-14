@@ -108,8 +108,9 @@
             "    ),",
             "    vocabulary=${5:u'plone.app.vocabularies.PortalTypes'},",
             "    default=u'${6}',",
-            "    required=${7|False,True|},",
-            "    readonly=${8|False,True|},",
+            "    # defaultFactory=${7:get_default_${1}},",
+            "    required=${8|False,True|},",
+            "    readonly=${9|False,True|},",
             ")"
         ],
         "prefix": "PloneChoiceField"
@@ -343,9 +344,8 @@
             "    description=_(",
             "        u'${4}',",
             "    ),",
-            "    default=${5},",
-            "    required=${6|False,True|},",
-            "    readonly=${7|False,True|},",
+            "    required=${5|False,True|},",
+            "    readonly=${6|False,True|},",
             ")"
         ],
         "prefix": "PloneImageField"
@@ -417,6 +417,7 @@
             "        'Folder',",
             "        'Image',",
             "    ]),",
+            "    # defaultFactory=${7:get_default_${1}},",
             "    readonly=${8|False,True|},",
             ")"
         ],

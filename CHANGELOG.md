@@ -12,6 +12,9 @@ Changelog
 - Add more querystring operations to PloneRegQueryField
   [MrTango]
 
+- Add defaultFactory to ChoiceFields in Python files
+  [MrTango]
+
 0.5.1 (2019-07-05)
 
 - Add plone.app.querystring.operation.string.is to PloneRegQueryField operations
