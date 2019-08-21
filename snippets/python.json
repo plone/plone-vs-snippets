@@ -99,6 +99,7 @@
     },
     "Choice Field (plone.schema)": {
         "body": [
+            "# Make sure to import: plone.app.vocabularies as vocabs",
             "${1:name} = ${2:schema.Choice}(",
             "    title=_(",
             "        u'${3}',",
@@ -106,7 +107,7 @@
             "    description=_(",
             "        u'${4}',",
             "    ),",
-            "    vocabulary=${5:u'plone.app.vocabularies.PortalTypes'},",
+            "    vocabulary=${5:u'vocabs.PortalTypes'},",
             "    default=u'${6}',",
             "    # defaultFactory=${7:get_default_${1}},",
             "    required=${8|False,True|},",
@@ -408,6 +409,7 @@
     },
     "Multi Choice Field (plone.schema)": {
         "body": [
+            "# Make sure to import: plone.app.vocabularies as vocabs",
             "${1:name} = ${2|schema.Set,schema.List|}(",
             "    title=_(",
             "        u'${3}',",
@@ -416,7 +418,7 @@
             "        u'${4}',",
             "    ),",
             "    value_type=schema.Choice(",
-            "        vocabulary=${5:u'plone.app.vocabularies.PortalTypes'},",
+            "        vocabulary=${5:u'vocabs.PortalTypes'},",
             "    ),",
             "    required=${6|False,True|},",
             "    default=set([",
@@ -447,7 +449,7 @@
     },
     "Relation Choice Field (single) (z3c.relationfield)": {
         "body": [
-            "# Make sure to import: z3c.relationfield and plone.app.vocabularies",
+            "# Make sure to import: z3c.relationfield and plone.app.vocabularies as vocabs",
             "${1:name} = ${2:relationfield.schema.RelationChoice}(",
             "    title=_(",
             "        u'${3}',",
@@ -455,7 +457,7 @@
             "    description=_(",
             "        u'${4}',",
             "    ),",
-            "    source=vocabularies.catalog.CatalogSource(",
+            "    source=vocabs.catalog.CatalogSource(",
             "        portal_type='${5|Document,News Item,Event,File,Image,Link,Collection,Folder|}',",
             "    ),",
             "    default=u'${6}',",
@@ -467,7 +469,7 @@
     },
     "Relation List Field (multi) (z3c.relationfield)": {
         "body": [
-            "# Make sure to import: z3c.relationfield and plone.app.vocabularies",
+            "# Make sure to import: z3c.relationfield and plone.app.vocabularies as vocabs",
             "${1:name} = ${2:relationfield.schema.RelationList}(",
             "    title=_(",
             "        u'${3}',",
@@ -477,7 +479,7 @@
             "    ),",
             "    value_type=relationfield.schema.RelationChoice(",
             "       title=u'${5:Related}',",
-            "       source=vocabularies.catalog.CatalogSource(",
+            "       source=vocabs.catalog.CatalogSource(",
             "           portal_type='${6|Document,News Item,Event,File,Image,Link,Collection,Folder|}',",
             "       ),",
             "    ),",

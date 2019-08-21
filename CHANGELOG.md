@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.5.3 (unreleased)
+
+- Fix import note for vocabularies, to ovoid conflict with vocabularies module in package
+  [MrTango]
+
 0.5.2 (2019-8-14)
 
 - Fix PloneImageField snippet for supermodel files
