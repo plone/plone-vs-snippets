@@ -9,6 +9,9 @@ Changelog
 - Fix import note for vocabularies, to ovoid conflict with vocabularies module in package
   [MrTango]
 
+- Remove default empty value for date and datetime fields
+  [erral]
+
 - Fix PloneImageField snippet for supermodel files
   [erral]
 

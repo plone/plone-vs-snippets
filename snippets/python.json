@@ -142,7 +142,7 @@
             "    description=_(",
             "        u'${4}',",
             "    ),",
-            "    default='',",
+            "    # defaultFactory=${5:get_default_${1}},",
             "    required=${6|False,True|},",
             "    readonly=${7|False,True|},",
             ")"
@@ -158,7 +158,7 @@
             "    description=_(",
             "        u'${4}',",
             "    ),",
-            "    default='',",
+            "    # defaultFactory=${5:get_default_${1}},",
             "    required=${6|False,True|},",
             "    readonly=${7|False,True|},",
             ")"
