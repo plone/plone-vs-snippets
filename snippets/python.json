@@ -593,5 +593,15 @@
             "return self.request.response.redirect(${1:self.context.absolute_url()}, status=301)"
         ],
         "prefix": "PloneRedirect"
+    },
+    "api: show_message (Python)": {
+        "body": [
+            "api.portal.show_message(",
+            "    message=_(\"${1}\"),",
+            "    request=self.request,",
+            "    type=\"${2|info,warn,error|}\",",
+            ")"
+        ],
+        "prefix": "PloneAPIShowMessage"
     }
 }

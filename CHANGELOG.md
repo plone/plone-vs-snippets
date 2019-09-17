@@ -1,7 +1,10 @@
 Changelog
 =========
 
-0.5.4 (unreleased)
+0.5.4 (2019-09-17)
+
+- Add API: show_message snippet to Python snippets
+  [MrTango]
 
 
 0.5.3 (2019-09-02)
