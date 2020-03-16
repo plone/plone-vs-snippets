@@ -83,6 +83,8 @@
             "  <default>${6}</default>",
             "  <required>${7|False,True|}</required>",
             "  <readonly>${8|False,True|}</readonly>",
+            "  <!-- if you want to have radio buttons to select, uncomment the following line -->",
+            "  <!-- <form:widget type=\"z3c.form.browser.radio.RadioFieldWidget\"></form:widget> -->",
             "</field>"
         ],
         "prefix": "PloneChoiceField"
@@ -306,6 +308,8 @@
             "  </value_type>",
             "  <required>${7|False,True|}</required>",
             "  <readonly>False</readonly>",
+            "  <!-- if you want to have checkboxes to select, uncomment the following line -->",
+            "  <!-- <form:widget type=\"z3c.form.browser.checkbox.CheckBoxFieldWidget\"></form:widget> -->"
             "</field>"
         ],
         "prefix": "PloneMultiChoiceField"

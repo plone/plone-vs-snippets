@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.5.5 (UNRELEASED)
+
+- Provide example of how to use checkboxes in multichoice fields.
+  [erral]
+
+- Provide example of how to use radio buttons in choice fields
+  [erral]
+
 0.5.4 (2019-09-17)
 
 - Add API: show_message snippet to Python snippets
