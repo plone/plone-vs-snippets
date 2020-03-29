@@ -179,7 +179,7 @@
     },
     "Field Widget (plone.autoform.directive)": {
         "body": [
-            "<form:widget type=\"${1|z3c.form.browser.text.TextWidget,z3c.form.browser.checkbox.CheckBoxFieldWidget,z3c.form.browser.checkbox.SingleCheckBoxFieldWidget,plone.z3cform.textlines.TextLinesFieldWidget,plone.app.z3cform.wysiwyg.WysiwygFieldWidget,plone.app.z3cform.widget.SelectFieldWidget,plone.app.z3cform.widget.AjaxSelectFieldWidget,plone.app.z3cform.widget.RelatedItemsFieldWidget,plone.app.z3cform.widget.QueryStringFieldWidget,plone.app.z3cform.widget.LinkFieldWidget|}\">",
+            "<form:widget type=\"${1|z3c.form.browser.text.TextWidget,z3c.form.browser.checkbox.CheckBoxFieldWidget,z3c.form.browser.checkbox.SingleCheckBoxFieldWidget,z3c.form.browser.radio.RadioFieldWidget,plone.z3cform.textlines.TextLinesFieldWidget,plone.app.z3cform.wysiwyg.WysiwygFieldWidget,plone.app.z3cform.widget.SelectFieldWidget,plone.app.z3cform.widget.AjaxSelectFieldWidget,plone.app.z3cform.widget.RelatedItemsFieldWidget,plone.app.z3cform.widget.QueryStringFieldWidget,plone.app.z3cform.widget.LinkFieldWidget|}\">",
             "  <klass>${2:my_css_class}</klass>",
             "</form:widget>"
         ],
