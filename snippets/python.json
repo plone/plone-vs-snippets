@@ -285,7 +285,6 @@
             "    description=_(",
             "        u'${4}',",
             "    ),",
-            "    default='',",
             "    required=${6|False,True|},",
             "    readonly=${7|False,True|},",
             ")"

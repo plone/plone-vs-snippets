@@ -3,6 +3,9 @@ Changelog
 
 0.5.5 (UNRELEASED)
 
+- Remove default value from the NamedBlobFile field
+  [erral]
+
 - Add RadioFieldWidget to the available widget list
   [erral]
 
