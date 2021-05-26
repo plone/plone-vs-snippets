@@ -3,6 +3,9 @@ Changelog
 
 0.5.5 (UNRELEASED)
 
+- Remove default value from the NamedBlobFile field
+  [erral]
+
 - Align RichText import with the import created by plonecli/bobtemplates.plone
   [erral]
 
