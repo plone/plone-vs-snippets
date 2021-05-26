@@ -491,8 +491,8 @@
     },
     "RichText Field (plone.app.textfield)": {
         "body": [
-            "# Make sure to import: plone.app.textfield",
-            "${1:name} = ${2:textfield.RichText}(",
+            "# Make sure to import: from plone.app.textfield import RichText",
+            "${1:name} = ${2:RichText}(",
             "    title=_(",
             "        u'${3}',",
             "    ),",

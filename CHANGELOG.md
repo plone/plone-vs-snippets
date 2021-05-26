@@ -6,6 +6,9 @@ Changelog
 - Remove default value from the NamedBlobFile field
   [erral]
 
+- Align RichText import with the import created by plonecli/bobtemplates.plone
+  [erral]
+
 - Add RadioFieldWidget to the available widget list
   [erral]
 
