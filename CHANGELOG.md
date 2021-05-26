@@ -3,6 +3,9 @@ Changelog
 
 0.5.5 (UNRELEASED)
 
+- Align RichText import with the import created by plonecli/bobtemplates.plone
+  [erral]
+
 - Add RadioFieldWidget to the available widget list
   [erral]
 
