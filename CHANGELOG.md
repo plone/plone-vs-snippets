@@ -12,6 +12,12 @@ Changelog
 - Add RadioFieldWidget to the available widget list
   [erral]
 
+- Provide more options for querystring and Catalog index snippets
+  [MrTango]
+
+- Provide a list of vocabularies for Choice and Multi-Choice fields in Python schema
+  [MrTango]
+
 
 0.5.4 (2019-09-17)
 
