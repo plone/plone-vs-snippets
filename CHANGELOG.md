@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.5 (UNRELEASED)
+0.5.6 (UNRELEASED)
 
 - Remove default value from the NamedBlobFile field
   [erral]
