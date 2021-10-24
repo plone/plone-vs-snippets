@@ -402,36 +402,13 @@
         "body": [
             "<records prefix=\"plone.bundles/${1:bundlename}\"",
             "         interface='Products.CMFPlone.interfaces.IBundleRegistry'>",
-            "  <value key=\"resources\">",
-            "    <element>${2:resourcename}</element>",
-            "  </value>",
             "  <value key=\"enabled\">${3|True,False|}</value>",
             "  <value key=\"depends\">plone</value>",
-            "  <value key=\"compile\">${3|True,False|}</value>",
-            "  <value key=\"merge_with\">${7|default,logged-in,|}</value>",
             "  <value key=\"jscompilation\">${4:++plone++static/plone-compiled.js}</value>",
             "  <value key=\"csscompilation\">${5:++plone++static/plone-compiled.css}</value>",
-            "  <value key=\"last_compilation\">${6:2019-01-22 00:00:00}</value>",
-            "  <value key=\"stub_js_modules\">",
-            "    <element>jquery</element>",
-            "    <element>mockup-utils</element>",
-            "  </value>",
             "</records>"
         ],
         "prefix": "PloneRegBundle"
-    },
-    "Resource Registry Resource": {
-        "body": [
-            "<records prefix=\"plone.resources/${1:name}\"",
-            "         interface='Products.CMFPlone.interfaces.IResourceRegistry'>",
-            "  <value key=\"js\">${2:jsurl}</value>",
-            "  <value key=\"css\">",
-            "    <element>${3:cssurl}</element>",
-            "  </value>",
-            "  <!--<value key=\"deps\">jquery</value>-->",
-            "</records>"
-        ],
-        "prefix": "PloneRegResource"
     },
     "RichText Field (plone.supermodel)": {
         "body": [
