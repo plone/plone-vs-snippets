@@ -1,3 +1,4 @@
 /.vscode/settings.json
 *.vsix
 /vstoken.txt
+/node_modules

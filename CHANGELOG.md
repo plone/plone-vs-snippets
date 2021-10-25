@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.6 (UNRELEASED)
+0.5.7 (UNRELEASED)
 
 - Remove default value from the NamedBlobFile field
   [erral]
@@ -16,6 +16,12 @@ Changelog
   [MrTango]
 
 - Provide a list of vocabularies for Choice and Multi-Choice fields in Python schema
+  [MrTango]
+
+- Remove Resource Registry Resource and cleanup Registry Bundle
+  [MrTango]
+
+- Fix ChoiceField vocabulary list
   [MrTango]
 
 
