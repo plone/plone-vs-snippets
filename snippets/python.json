@@ -365,7 +365,8 @@
             "        u'${4}',",
             "    ),",
             "    required=${5|False,True|},",
-            "    default=${6},",
+            "    default=\"${6}\",",
+            "    # defaultFactory=${7:get_default_${1}},",
             "    readonly=${7|False,True|},",
             ")"
         ],
