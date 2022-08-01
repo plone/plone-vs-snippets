@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.5.8 (2022-08-01)
+
+- Fix choice field vocabulary
+  [MrTango]
 
 0.5.7 (2021-10-25)
 
