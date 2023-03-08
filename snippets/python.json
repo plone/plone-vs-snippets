@@ -106,7 +106,7 @@
             "    description=_(",
             "        u'${4}',",
             "    ),",
-            "    vocabulary=\"${5|plone.app.vocabularies.Users,plone.app.vocabularies.Groups,plone.app.vocabularies.ImagesScales,plone.app.vocabularies.MetadataFields,plone.app.vocabularies.Weekdays,plone.app.vocabularies.WeekdaysAbbr,plone.app.vocabularies.WeekdaysShort,plone.app.vocabularies.Month,plone.app.vocabularies.MonthAbbr,plone.app.vocabularies.PortalTypes},\"",
+            "    vocabulary=\"${5|plone.app.vocabularies.Users,plone.app.vocabularies.Groups,plone.app.vocabularies.ImagesScales,plone.app.vocabularies.MetadataFields,plone.app.vocabularies.Weekdays,plone.app.vocabularies.WeekdaysAbbr,plone.app.vocabularies.WeekdaysShort,plone.app.vocabularies.Month,plone.app.vocabularies.MonthAbbr,plone.app.vocabularies.PortalTypes|},\"",
             "    default=u\"${6}\",",
             "    # defaultFactory=${7:get_default_${1}},",
             "    required=${8|False,True|},",

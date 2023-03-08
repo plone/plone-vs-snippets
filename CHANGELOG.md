@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.5.9 (UNRELEASED)
+
+- Fix choice field vocabulary
+  [MrTango]
+
+- Add Plone permissions like cmf.ModifyPortalContent, zope2.DeleteObjects aso in XML snippets
+  [MrTango]
+
 0.5.8 (2022-08-01)
 
 - Fix choice field vocabulary

@@ -521,5 +521,11 @@
             "</index>"
         ],
         "prefix": "PloneCatalogIndex"
+    },
+    "Permission": {
+        "body": [
+            "${0|cmf.AddPortalContent,cmf.ReviewPortalContent,cmf.ModifyPortalContent,zope2.DeleteObjects,zope2.CopyOrMove,zope2.View,zope.Public|}"
+        ],
+        "prefix": "PlonePermission"
     }
 }
