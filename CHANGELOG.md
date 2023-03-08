@@ -1,7 +1,12 @@
 Changelog
 =========
 
-0.5.9 (UNRELEASED)
+0.5.10 (2023-03-08)
+
+- Fix permissions snippet
+  [MrTango]
+
+0.5.9 (2023-03-08)
 
 - Fix choice field vocabulary
   [MrTango]
