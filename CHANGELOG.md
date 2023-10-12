@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.5.11 (2023-10-12)
+
+- Fix Choice and Choice list snippets
+  [MrTango]
+
 0.5.10 (2023-03-08)
 
 - Fix permissions snippet
