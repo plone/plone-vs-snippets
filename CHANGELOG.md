@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.12 (UNRELEASED)
+0.5.12 (unreleased)
 
 - Add `cmf.ManagePortal` to Permission available in ZCML files.
   [MrTango]
