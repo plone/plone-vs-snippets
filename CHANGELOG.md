@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.5.12 (UNRELEASED)
+
+- Add `cmf.ManagePortal` to Permission available in ZCML files.
+  [MrTango]
+
 0.5.11 (2023-10-12)
 
 - Fix Choice and Choice list snippets

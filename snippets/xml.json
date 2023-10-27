@@ -524,7 +524,7 @@
     },
     "Permission": {
         "body": [
-            "permission=\"${1|cmf.AddPortalContent,cmf.ReviewPortalContent,cmf.ModifyPortalContent,zope2.DeleteObjects,zope2.CopyOrMove,zope2.View,zope.Public|}\""
+            "permission=\"${1|cmf.ManagePortal,cmf.AddPortalContent,cmf.ReviewPortalContent,cmf.ModifyPortalContent,zope2.DeleteObjects,zope2.CopyOrMove,zope2.View,zope.Public|}\""
         ],
         "prefix": "PlonePermission"
     }
