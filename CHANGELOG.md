@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.5.13 (2023-10-27)
+1.0.0 (2023-10-27)
 
 - Add `cmf.ManagePortal` to Permission available in ZCML files.
   [MrTango]
