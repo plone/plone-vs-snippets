@@ -404,8 +404,8 @@
             "         interface='Products.CMFPlone.interfaces.IBundleRegistry'>",
             "  <value key=\"enabled\">${3|True,False|}</value>",
             "  <value key=\"depends\">plone</value>",
-            "  <value key=\"jscompilation\">${4:++plone++static/plone-compiled.js}</value>",
-            "  <value key=\"csscompilation\">${5:++plone++static/plone-compiled.css}</value>",
+            "  <value key=\"jscompilation\">${4:++plone++collective.example/plone-compiled.js}</value>",
+            "  <value key=\"csscompilation\">${5:++plone++collective.example/plone-compiled.css}</value>",
             "</records>"
         ],
         "prefix": "PloneRegBundle"
