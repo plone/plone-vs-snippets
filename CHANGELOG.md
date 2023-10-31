@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.0.1 (2023-10-31)
+
+- Improve RegBundle snippet.
+  [MrTango]
+
+
 1.0.0 (2023-10-27)
 
 - Add `cmf.ManagePortal` to Permission available in ZCML files.
