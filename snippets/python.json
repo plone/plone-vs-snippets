@@ -590,6 +590,23 @@
         ],
         "prefix": "PloneURIField"
     },
+    "JSON Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.JSONField}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    schema='',",
+            "    default=u'${5}',",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneURIField"
+    },
     "response/redirect (Python)": {
         "body": [
             "return self.request.response.redirect(${1:self.context.absolute_url()}, status=301)"

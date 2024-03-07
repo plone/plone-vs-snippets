@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.0.2 (2024-03-07)
+
+- Add JSONField
+  [MrTango]
+
 1.0.1 (2023-10-31)
 
 - Improve RegBundle snippet.
