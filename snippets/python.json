@@ -599,8 +599,8 @@
             "    description=_(",
             "        u'${4}',",
             "    ),",
-            "    schema='',",
-            "    default=u'${5}',",
+            "    schema=json.dumps({}),",
+            "    default={},",
             "    required=${6|False,True|},",
             "    readonly=${7|False,True|},",
             ")"
