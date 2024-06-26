@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.0.4 (2024-06-26)
+
+- Improve defaults for JSONField
+  [MrTango]
+
+
 1.0.3 (2024-06-26)
 
 - Fix JSONField prefix name
