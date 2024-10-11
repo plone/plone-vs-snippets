@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.0.5 (2024-10-11)
+
+- Improve help text for NamedBlobFile field
+
+
 1.0.4 (2024-06-26)
 
 - Improve defaults for JSONField

@@ -276,7 +276,7 @@
     },
     "File Field (plone.namedfile)": {
         "body": [
-            "# Make sure you import: plone.namedfile",
+            "# Make sure you add import: from plone.namedfile.field import NamedBlobFile",
             "${1:name} = ${2:namedfile.NamedBlobFile}(",
             "    title=_(",
             "        u'${3}',",
