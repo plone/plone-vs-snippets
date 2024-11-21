@@ -250,7 +250,7 @@
     "Field Widget (plone.autoform)": {
         "body": [
             "# You have to import the widget!",
-            "# Check: https://docs.plone.org/external/plone.app.dexterity/docs/grok/reference/widgets.html#widgets  # NOQA: E501",
+            "# see https://github.com/plone/plone.app.z3cform/tree/master/plone/app/z3cform/widgets",
             "directives.widget(${1:field_name}=${2|TextWidget,RadioFieldWidget,CheckBoxFieldWidget,SingleCheckBoxBoolFieldWidget,OptgroupFieldWidget,TextLinesFieldWidget,WysiwygFieldWidget,SelectFieldWidget,AjaxSelectFieldWidget,RelatedItemsFieldWidget,QueryStringFieldWidget,LinkFieldWidget|})"
         ],
         "prefix": "PloneFieldWidget"
@@ -556,6 +556,22 @@
             ")"
         ],
         "prefix": "PloneTextLineField"
+    },
+    "Email Field (plone.schema)": {
+        "body": [
+            "${1:name} = ${2:schema.Email}(",
+            "    title=_(",
+            "        u'${3}',",
+            "    ),",
+            "    description=_(",
+            "        u'${4}',",
+            "    ),",
+            "    default=u'${5}',",
+            "    required=${6|False,True|},",
+            "    readonly=${7|False,True|},",
+            ")"
+        ],
+        "prefix": "PloneEmailField"
     },
     "Tuple Field (plone.schema)": {
         "body": [
