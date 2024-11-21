@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.0.6 (2024-10-21)
+
+- Add Email field to Python snippets
+
+
 1.0.5 (2024-10-11)
 
 - Improve help text for NamedBlobFile field
