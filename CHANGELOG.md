@@ -3,7 +3,7 @@ Changelog
 
 1.0.7 (UNRELEASED)
 
-- Add snippets to create volto blocks
+- Add snippets to create Volto blocks.
 
 
 1.0.6 (2024-10-21)
