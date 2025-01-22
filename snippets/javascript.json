@@ -65,7 +65,7 @@
   "Volto Schema Enhancer function": {
     "prefix": ["voltoSchemaEnhancer"],
     "body": [
-      "const schemaEnhancerVariation = ({ formData, schema, intl}) => {",
+      "const schemaEnhancerFunction = ({ formData, schema, intl}) => {",
       "  schema.properties.color = {",
       "    title: 'Color',",
       "  };",
@@ -73,7 +73,7 @@
       "  return schema;",
       "};",
       "",
-      "export default schemaEnhancerVariation;"
+      "export default schemaEnhancerFunction;"
     ],
     "description": "Volto schema enhancer function"
   },
