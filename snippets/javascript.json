@@ -43,6 +43,7 @@
       "  blockSchema: BlockSchema,",
       "  icon: imagesSVG,",
       "  sidebarTab: 1,",
+      "  group: 'common',",
       "  variations: [",
       "    {",
       "      id: 'variation01',",
