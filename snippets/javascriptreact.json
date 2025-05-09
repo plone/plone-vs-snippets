@@ -1,0 +1,59 @@
+{
+  "Volto Block Base View": {
+    "prefix": ["viewBlock", "voltoViewBlock"],
+    "body": [
+      "import React from 'react';",
+      "import withBlockExtensions from '@plone/volto/helpers/Extensions/withBlockExtensions';",
+      "const BlockView = (props) => {",
+      "  const { data, className, style } = props;",
+      "  return (",
+      "    <div className={className} style={style}>",
+      "      Base Block View",
+      "    </div>",
+      "  );",
+      "};",
+      "export default withBlockExtensions(BlockView);"
+    ],
+    "description": "Volto Block Base View"
+  },
+  "Volto Block Base Edit": {
+    "prefix": ["editBlock", "voltoEditBlock"],
+    "body": [
+      "import React from 'react';",
+      "import withBlockExtensions from '@plone/volto/helpers/Extensions/withBlockExtensions';",
+      "",
+      "import BlockDataForm from '@plone/volto/components/manage/Form/BlockDataForm';",
+      "import SidebarPortal from '@plone/volto/components/manage/Sidebar/SidebarPortal';",
+      "",
+      "import { BlockView } from './BlockView';",
+      "import Schema from './schema';",
+      "",
+      "const BlockEdit = (props) => {",
+      "  const { block, data, onChangeBlock, selected } = props;",
+      "  return (",
+      "    <>",
+      "      <BlockView isEditMode={true} {...props}></BlockView>",
+      "",
+      "      <SidebarPortal selected={selected}>",
+      "        <BlockDataForm",
+      "          schema={Schema(props)}",
+      "          title={Schema(props).title}",
+      "          onChangeField={(id, value) => {",
+      "            onChangeBlock(block, {",
+      "              ...data,",
+      "              [id]: value,",
+      "            });",
+      "          }}",
+      "          formData={data}",
+      "          block={block}",
+      "        />",
+      "      </SidebarPortal>",
+      "    </>",
+      "  );",
+      "};",
+      "",
+      "export default withBlockExtensions(BlockEdit);"
+    ],
+    "description": "Volto Block Base Edit"
+  }
+}

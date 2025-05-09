@@ -4,11 +4,12 @@
 
 ![Plone logo](https://github.com/plone/plone-vs-snippets/raw/master/images/plone-logo-128.png)
 
-* [plone.org (Community)](https://plone.org)
+- [plone.org (Community)](https://plone.org)
 
 Currently this extension provides a good set of XML-Registry and Supermodel Snippets, as well as Python Snippets.
-You also have useful ``plone.autoform`` and ZCML permission Snippets to setup fieldsets and custom widgets.
+You also have useful `plone.autoform` and ZCML permission Snippets to setup fieldsets and custom widgets.
 
+It also provides Snippets for Volto Block View and Edit components, and Volto block configuration, Volto block schema and Volto schema enhancers aswell.
 
 ### Plone XML (supermodel) Snippets for VS Code
 
@@ -18,6 +19,9 @@ You also have useful ``plone.autoform`` and ZCML permission Snippets to setup fi
 
 ![Plone Python Snippets for VS Code](https://github.com/plone/plone-vs-snippets/raw/master/images/vs-code-snippets-python.gif)
 
+### Volto Snippets for VS Code
+
+![Volto Snippets for VS Code](https://github.com/plone/plone-vs-snippets/raw/master/images/vs-code-snippets-volto.gif)
 
 ## Install
 

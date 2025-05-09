@@ -1,0 +1,97 @@
+{
+  "Volto Block Schema": {
+    "prefix": ["blockSchema", "voltoBlockSchema"],
+    "body": [
+      "import messages from './messages';",
+      "",
+      "const Schema = ({ intl }) => {",
+      "  return {",
+      "    title: intl.formatMessage(messages.blocktitle),",
+      "    block: 'block',",
+      "    fieldsets: [",
+      "      {",
+      "        id: 'default',",
+      "        title: intl.formatMessage(messages.default),",
+      "        fields: ['url', 'title'],",
+      "      },",
+      "    ],",
+      "",
+      "    properties: {",
+      "      url: {",
+      "        title: intl.formatMessage(messages.URL),",
+      "        widget: 'url',",
+      "      },",
+      "      title: {",
+      "        title: intl.formatMessage(messages.title),",
+      "      },",
+      "    },",
+      "    required: [],",
+      "  };",
+      "};",
+      "export default Schema;"
+    ],
+    "description": "Volto Block Base Schema"
+  },
+  "Volto Block Config": {
+    "prefix": ["voltoBlockConfig"],
+    "body": [
+      "config.blocks.blocksConfig.block06 = {",
+      "  id: 'block06',",
+      "  title: 'Block 06',",
+      "  view: BlockView,",
+      "  //edit: BlockEdit,",
+      "  blockSchema: BlockSchema,",
+      "  icon: imagesSVG,",
+      "  sidebarTab: 1,",
+      "  group: 'common',",
+      "  variations: [",
+      "    {",
+      "      id: 'variation01',",
+      "      title: 'Variation 01',",
+      "      isDefault: true,",
+      "      template: VariationView0601,",
+      "    },",
+      "    {",
+      "      id: 'variation02',",
+      "      title: 'Variation 02',",
+      "      isDefault: false,",
+      "      template: VariationView0602,",
+      "      schemaEnhancer: schemaEnhancerBlock06Variation02,",
+      "    },",
+      "  ],",
+      "};"
+    ],
+    "description": "Volto block configuration boilerplate"
+  },
+  "Volto Schema Enhancer function": {
+    "prefix": ["voltoSchemaEnhancer"],
+    "body": [
+      "const schemaEnhancerFunction = ({ formData, schema, intl}) => {",
+      "  schema.properties.color = {",
+      "    title: 'Color',",
+      "  };",
+      "  schema.fieldsets[0].fields.push('color');",
+      "  return schema;",
+      "};",
+      "",
+      "export default schemaEnhancerFunction;"
+    ],
+    "description": "Volto schema enhancer function"
+  },
+  "Volto intl messages": {
+    "prefix": ["voltoIntlMessages"],
+    "body": [
+      "import { defineMessages } from 'react-intl';",
+      "",
+      "const messages = defineMessages({",
+      "  title: {",
+      "    id: 'title',",
+      "    defaultMessage: 'Title',",
+      "  },",
+      "});",
+      "",
+      "export default messages;"
+    ],
+    "description": "Volto intl messages"
+  }
+}
